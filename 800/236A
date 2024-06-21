@@ -14,8 +14,6 @@ bool noInside(char c1, char characters[], int cont) {
 int main() {
     string s1;
     cin >> s1;
-
-    // Initialize the distinct array after reading the input
     char distinct[s1.length()];
     int cont = 0;
 
@@ -26,11 +24,8 @@ int main() {
         }
     }
 
-    if (cont % 2 == 0) {
+    if (cont % 2 ==0) {
         cout << "CHAT WITH HER!";
-    } else {
-        cout << "IGNORE HIM!";
-    }
-
+    } else {cout << "IGNORE HIM!";}
     return 0;
 }
